@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { Card, CardBody, CardTitle, Button, CardText } from 'reactstrap'
 
 const BeerCard= (props) =>{
-    const { beer, style } = props
+    const { beer, style, brewery } = props
     return(
         <div>
             <Card>
@@ -14,7 +14,10 @@ const BeerCard= (props) =>{
                     <CardText>
                         Style: {style}
                     </CardText>
-                    <Link to={`/beers/${beer}`}>
+                    <CardText>
+                       Brewed at: {brewery} brewery
+                    </CardText>
+                    <Link to={`/beers/${brewery}`}>
                         <Button>
                           More Details About This Beer
                         </Button>

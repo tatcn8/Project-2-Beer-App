@@ -30,7 +30,7 @@ function App() {
         </NavItem>
         <NavItem>
           <NavLink href="/beers">
-            | Domestic-Beers |
+            | Beers-Top 100 |
           </NavLink>
         </NavItem>
         <NavItem>
@@ -46,7 +46,7 @@ function App() {
         <Route path ="/breweries" element={<Row><BreweriesList /></Row>} />
         <Route path ="/breweries/:id" element={<BreweriesDetails />} />
         <Route path ="/beers" element={<Row><BeerList /></Row>} />
-        <Route path ="/beers/:beer" element={<BeerDetails />} />
+        <Route path ="/beers/:brewery" element={<BeerDetails />} />
       </Routes>
     </div>
   );

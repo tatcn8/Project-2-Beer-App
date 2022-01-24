@@ -4,13 +4,13 @@ import { Card, CardTitle, CardText} from 'reactstrap';
 
 
 const BeerDetails= () =>{
-    const { beer } = useParams()
+    const { brewery } = useParams()
     const [bier, setBier] = useState()
     const url = "https://beer-lover.p.rapidapi.com/search/beer/"
     const key = process.env.REACT_APP_KEY
 
 
-    const combinedUrl = `${url}${beer}`
+    const combinedUrl = `${url}${brewery}`
     console.log(combinedUrl)
 
     useEffect(()=>{
