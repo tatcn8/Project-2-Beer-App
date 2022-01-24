@@ -1,4 +1,4 @@
-# Project-2-BEER APP
+# Project-2-Beer App
 ## Project 2 Proposal Ted Tash SEIR-1213
 ## Project Description:
  The website will have a home landing page with a “welcome” message. There will be a navbar with the top 100 beers index and domestic breweries. When the top 100 beers is clicked, the list of 100 beers is displayed along with some baseline info on each beer. A "more details" button is available and when clicked with render a details page with details on the specific beer selected. Back on the homepage, if domestic breweries is selected, the user will be brought to a list of all 50 states. When a state is selected, a list of 10 breweries from that state will appear along with some information about each of the breweries. There will also be a link which will re-direct the user to the selected breweries' website.
@@ -25,8 +25,8 @@
 *At this point, I would be done with the site and get back to instagram to watch cat videos.
 
 ## API (link): 
-*https://rapidapi.com/yeptony-hwvrTFFax/api/beer-lover/
+https://rapidapi.com/yeptony-hwvrTFFax/api/beer-lover/
 and
-*https://www.openbrewerydb.org/
+https://www.openbrewerydb.org/
 ## Component Hierarchy: 
 <!-- ![Hierarchy](images/Hierarchy.png) -->

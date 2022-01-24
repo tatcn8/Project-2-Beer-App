@@ -27,7 +27,7 @@ console.log(beers)
                     style = {beer.style}
                     id = {beer.id}
                     key ={beer.id}
-                    brewery = {beer.brewery}/>
+                />
             </Col>
             )
         })}
