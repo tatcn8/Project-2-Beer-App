@@ -7,17 +7,17 @@ const BreweryCards = (props) =>{
     return(
         <div>
             <Card>
-                    <CardBody>
-                        <CardTitle tag="h5">
-                            {name}
-                        </CardTitle>
-                        <Link to={`/breweries/${id}`}>
-                            <Button>
-                                Breweries in this State
-                            </Button>
-                        </Link>
-                    </CardBody>
-                </Card>
+                <CardBody>
+                    <CardTitle tag="h5">
+                         {name}
+                    </CardTitle>
+                    <Link to={`/breweries/${id}`}>
+                        <Button>
+                          Breweries in this State
+                        </Button>
+                    </Link>
+                </CardBody>
+            </Card>
         </div>
     )
 }

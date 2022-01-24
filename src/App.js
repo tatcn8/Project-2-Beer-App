@@ -4,6 +4,8 @@ import Header from './components/Header';
 import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse, Row } from "reactstrap";
 import BreweriesList from './components/BreweriesList';
 import BreweriesDetails from './components/BreweryDetails';
+import BeerList from './components/BeerList';
+import BeerDetails from './components/BeerDetails';
 
 
 function App() {
@@ -26,14 +28,14 @@ function App() {
            Home
           </NavLink>
         </NavItem>
-        {/* <NavItem>
+        <NavItem>
           <NavLink href="/beers">
             Beers
           </NavLink>
-        </NavItem> */}
+        </NavItem>
         <NavItem>
           <NavLink href="/breweries">
-            Breweries
+           Domestic-Breweries
           </NavLink>
         </NavItem>
       </Nav>
@@ -43,6 +45,8 @@ function App() {
         <Route path ="/" element={<Header />} />
         <Route path ="/breweries" element={<Row><BreweriesList /></Row>} />
         <Route path ="/breweries/:id" element={<BreweriesDetails />} />
+        <Route path ="/beers" element={<BeerList />} />
+        <Route path ="/beers/:id" element={<BeerDetails />} />
       </Routes>
     </div>
   );
