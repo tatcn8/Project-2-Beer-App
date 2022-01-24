@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-const BreweriesDetails = (props) =>{
+const BreweriesDetails = () =>{
     const { id } = useParams()
     const [stateBrew, setstateBrew] = useState([])
     const url = "https://api.openbrewerydb.org/breweries?by_state="
@@ -22,7 +22,7 @@ const BreweriesDetails = (props) =>{
                     <div>
                       <div>Name: {item.name}</div> 
                       <div>Website: {item.website_url}</div>
-                    {/* REPLACE THE DIVS WITH A CARD HERE TO MAKE THIS PRETTY LOOKING */}
+                    {/* try adding a card to make this look pretty */}
                     </div>
                     
                 )

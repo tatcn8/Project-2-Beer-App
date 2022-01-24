@@ -1,9 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
-import FishList from './components/FishList';
 import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse, Row } from "reactstrap";
-import AnimalDetails from './components/AnimalDetails';
 import BreweriesList from './components/BreweriesList';
 import BreweriesDetails from './components/BreweryDetails';
 
@@ -38,18 +36,11 @@ function App() {
             Breweries
           </NavLink>
         </NavItem>
-        <NavItem>
-          <NavLink href="/fish">
-            Fish
-          </NavLink>
-        </NavItem>
       </Nav>
     </Collapse>
   </Navbar>
       <Routes>
         <Route path ="/" element={<Header />} />
-        <Route path ="/fish" element={<FishList />} />
-        <Route path ="/fish/:id" element={<AnimalDetails />} />
         <Route path ="/breweries" element={<Row><BreweriesList /></Row>} />
         <Route path ="/breweries/:id" element={<BreweriesDetails />} />
       </Routes>

@@ -13,7 +13,7 @@ const BreweryCards = (props) =>{
                         </CardTitle>
                         <Link to={`/breweries/${id}`}>
                             <Button>
-                                CLICK FOR MORE INFO
+                                Breweries in this State
                             </Button>
                         </Link>
                     </CardBody>
