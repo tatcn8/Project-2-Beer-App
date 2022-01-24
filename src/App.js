@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
 import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse, Row } from "reactstrap";
@@ -9,6 +10,7 @@ import BeerDetails from './components/BeerDetails';
 
 
 function App() {
+  const [ navExpand, setNavExpand ] = useState(false)
   return (
     <div className="App">
       <Navbar
@@ -18,8 +20,11 @@ function App() {
     <NavbarBrand href="/">
     🍺  The Beer App 🍺 
     </NavbarBrand>
-    <NavbarToggler onClick={function noRefCheck(){}} />
-    <Collapse navbar>
+    <NavbarToggler
+          className='me-2'
+          onClick={() => setNavExpand(!navExpand)}
+        />
+    <Collapse navbar isOpen={ navExpand }>
       <Nav
         className="me-auto"
         navbar>
