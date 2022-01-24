@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Card, CardTitle, CardText, Button, Col } from 'reactstrap';
+import { Card, CardTitle, CardText, Button } from 'reactstrap';
 
 const BreweriesDetails = () =>{
     const { id } = useParams()
@@ -20,7 +20,6 @@ const BreweriesDetails = () =>{
         <div>
             {stateBrew.map(item=>{
                 return(
-            <Col xs='3'>
                 <div>
                  <Card
                     body
@@ -40,7 +39,6 @@ const BreweriesDetails = () =>{
                         </Button>
                  </Card>
                 </div>
-            </Col>
                     
                 )
             })}

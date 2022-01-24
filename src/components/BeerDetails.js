@@ -4,12 +4,15 @@ import { Card, CardTitle, CardText} from 'reactstrap';
 
 
 const BeerDetails= () =>{
-    const { id } = useParams()
-    const [beer, setBeer] = useState([])
-    const url = "https://beer-lover.p.rapidapi.com/beer/"
+    const { beer } = useParams()
+    const [bier, setBier] = useState()
+    const url = "https://beer-lover.p.rapidapi.com/search/beer/"
     const key = process.env.REACT_APP_KEY
-    const combinedUrl = `${url}${id}`
+
+
+    const combinedUrl = `${url}${beer}`
     console.log(combinedUrl)
+
     useEffect(()=>{
         fetch(combinedUrl, {
             "method": "GET",
@@ -18,11 +21,12 @@ const BeerDetails= () =>{
                 "x-rapidapi-key": key
         }})
         .then(res=>res.json())
-        .then(json=>setBeer(json))
+        .then(json=>setBier(json))
     }, [])
 
-    console.log(beer)
-    if (beer === []){
+    console.log(bier)
+
+    if (!bier){
         return <p>page loading...</p>
     } else{
     return(
@@ -32,16 +36,16 @@ const BeerDetails= () =>{
               color="secondary"
               outline>
               <CardTitle tag="h5">
-                {beer.beer}
+                {bier[0].beer}
               </CardTitle>
               <CardText>
-                Style: {beer.style}
+                Style: {bier[0].style}
               </CardText>
               <CardText>
-                Brewed by {beer.brewery} Brewery, {beer.beer} has an average score of {beer.score}
+                Brewed by {bier[0].brewery} Brewery, {bier[0].beer} has an average score of {bier[0].score}.
               </CardText>
               <CardText>
-                Proudly brewed in {beer.state}, {beer.country}.
+                Proudly brewed in {bier[0].state}, {bier[0].country}.
               </CardText>
            </Card>
           

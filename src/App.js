@@ -44,9 +44,9 @@ function App() {
       <Routes>
         <Route path ="/" element={<Header />} />
         <Route path ="/breweries" element={<Row><BreweriesList /></Row>} />
-        <Route path ="/breweries/:id" element={<Row><BreweriesDetails /></Row>} />
+        <Route path ="/breweries/:id" element={<BreweriesDetails />} />
         <Route path ="/beers" element={<Row><BeerList /></Row>} />
-        <Route path ="/beers/:id" element={<BeerDetails />} />
+        <Route path ="/beers/:beer" element={<BeerDetails />} />
       </Routes>
     </div>
   );

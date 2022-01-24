@@ -23,7 +23,7 @@ console.log(beers)
             return(
             <Col xs="4">
                 <BeerCard 
-                    name = {beer.beer}
+                    beer = {beer.beer}
                     style = {beer.style}
                     id = {beer.id}
                     key ={beer.id}/>
