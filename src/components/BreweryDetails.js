@@ -22,7 +22,7 @@ const BreweriesDetails = (props) =>{
                     <div>
                       <div>Name: {item.name}</div> 
                       <div>Website: {item.website_url}</div>
-                    {/* ADD A CARD HERE TO MAKE THIS PRETTY LOOKING */}
+                    {/* REPLACE THE DIVS WITH A CARD HERE TO MAKE THIS PRETTY LOOKING */}
                     </div>
                     
                 )
