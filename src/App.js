@@ -25,17 +25,17 @@ function App() {
         navbar>
         <NavItem>
           <NavLink href="/">
-           Home
+           | Home |
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="/beers">
-            Beers
+            | Domestic-Beers |
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="/breweries">
-           Domestic-Breweries
+           | Breweries by State |
           </NavLink>
         </NavItem>
       </Nav>
