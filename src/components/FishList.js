@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import AnimalCards from "./AnimalCards";
 
 const FishList = () => {
     const [animals, setAnimals] = useState([])
-    const url ="https://zoo-animal-api.herokuapp.com/animals/rand/10"
+    const url ="https://api.openbrewerydb.org/breweries?by_state=missouri"
     useEffect(()=>{
         fetch(url)
         .then(res=>res.json())
@@ -11,7 +12,12 @@ const FishList = () => {
     console.log(animals)
     return(
         animals.map(animal=>{
-            return animal.name
+            return (
+                <AnimalCards 
+                name = {animal.name}
+                state={animal.state}
+                id={animal.id}/>
+            )
         })
     )
 }

@@ -2,7 +2,11 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
 import FishList from './components/FishList';
-import MammalList from './components/MammalList';import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse } from "reactstrap";
+import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse } from "reactstrap";
+import AnimalDetails from './components/AnimalDetails';
+import BreweriesList from './components/BreweriesList';
+import BreweriesDetails from './components/BreweryDetails';
+
 
 function App() {
   return (
@@ -12,7 +16,7 @@ function App() {
     expand="md"
     light>
     <NavbarBrand href="/">
-        Wildlife App
+        The Beer App
     </NavbarBrand>
     <NavbarToggler onClick={function noRefCheck(){}} />
     <Collapse navbar>
@@ -24,14 +28,19 @@ function App() {
            Home
           </NavLink>
         </NavItem>
+        {/* <NavItem>
+          <NavLink href="/beers">
+            Beers
+          </NavLink>
+        </NavItem> */}
         <NavItem>
-          <NavLink href="/fish">
-            Fish
+          <NavLink href="/breweries">
+            Breweries
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/mammals">
-            Mammals
+          <NavLink href="/fish">
+            Fish
           </NavLink>
         </NavItem>
       </Nav>
@@ -40,7 +49,9 @@ function App() {
       <Routes>
         <Route path ="/" element={<Header />} />
         <Route path ="/fish" element={<FishList />} />
-        <Route path ="/mammals" element={<MammalList />} />
+        <Route path ="/fish/:id" element={<AnimalDetails />} />
+        <Route path ="/breweries" element={<BreweriesList />} />
+        <Route path ="/breweries/:id" element={<BreweriesDetails />} />
       </Routes>
     </div>
   );

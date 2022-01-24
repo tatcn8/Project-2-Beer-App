@@ -5,7 +5,8 @@ const Header = () =>{
     return(
  <div>
   <h1>Welcome</h1>
-  <h4>Try not to suck</h4>
+  <h4>Cheers!</h4>
+  <h6>Prost!</h6>
  </div>
     )
 }
