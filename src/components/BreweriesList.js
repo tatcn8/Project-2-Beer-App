@@ -65,10 +65,11 @@ const BreweriesList = (props) => {
 
             {state.map(state=>{
                 return(
-                 <Col xs="3">
+                 <Col xs="2">
                     <BreweryCards
                         name = {state.name}
-                        id = {state.id}  />
+                        id = {state.id}
+                        key={state.id}  />
                  </Col>
                 )
                 

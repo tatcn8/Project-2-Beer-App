@@ -12,7 +12,7 @@ const BeerCard= (props) =>{
                         {name}
                     </CardTitle>
                     <CardText>
-                        {style}
+                        Style: {style}
                     </CardText>
                     <Link to={`/beers/${id}`}>
                         <Button>

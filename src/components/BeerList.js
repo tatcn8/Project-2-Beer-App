@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BeerCard from "./BeerCard";
+import { Col } from 'reactstrap';
 
 const BeerList= () =>{
     const [beers, setBeers] = useState([])
@@ -15,16 +16,18 @@ const BeerList= () =>{
         .then(res=>res.json())
         .then(json=>setBeers(json))
     }, [])
-
+console.log(beers)
     return(
         <>
         {beers.map(beer=>{
             return(
+            <Col xs="4">
                 <BeerCard 
                     name = {beer.beer}
                     style = {beer.style}
                     id = {beer.id}
                     key ={beer.id}/>
+            </Col>
             )
         })}
         

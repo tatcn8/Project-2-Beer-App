@@ -8,17 +8,15 @@ const BreweryCards = (props) =>{
         <div>
             <Card>
                 <CardBody>
-                    <CardTitle tag="h5">
-                         {name}
-                    </CardTitle>
                     <Link to={`/breweries/${id}`}>
                         <Button>
-                          Breweries in this State
+                         {name}
                         </Button>
                     </Link>
                 </CardBody>
             </Card>
         </div>
+
     )
 }
 
