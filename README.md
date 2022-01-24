@@ -5,7 +5,7 @@
 ## Wireframes: 
 ![Wireframe](public/images/HomeWireframe.png)
 ![Wireframe](public/images/BeerlistWireframe.png)
-![Wireframe](public/images/StateWireframe.png)
+![Wireframe](public/images/StateWireframes.png)
 
 ## MVP User Story:
 *As a beer drinker, I would visit the homepage so I could gain more info about beer.
@@ -25,6 +25,6 @@
 *At this point, I would be done with the site and get back to instagram to watch cat videos.
 
 ## API (link): 
-https://rapidapi.com/yeptony-hwvrTFFax/api/beer-lover/      and       https://www.openbrewerydb.org/
+https://rapidapi.com/yeptony-hwvrTFFax/api/beer-lover/ and https://www.openbrewerydb.org/
 ## Component Hierarchy: 
 ![Hierarchy](public/images/BeerHierarchy.png)
