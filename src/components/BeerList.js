@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import BeerCard from "./BeerCard";
 
 const BeerList= () =>{
-    const [beer, setBeer] = useState([])
+    const [beers, setBeers] = useState([])
     const url = "https://beer-lover.p.rapidapi.com/search/country/United%20States"
     const key = process.env.REACT_APP_KEY
     useEffect(()=>{
@@ -13,12 +13,12 @@ const BeerList= () =>{
                 "x-rapidapi-key": key
         }})
         .then(res=>res.json())
-        .then(json=>setBeer(json))
+        .then(json=>setBeers(json))
     }, [])
 
     return(
         <>
-        {beer.map(beer=>{
+        {beers.map(beer=>{
             return(
                 <BeerCard 
                     name = {beer.beer}
