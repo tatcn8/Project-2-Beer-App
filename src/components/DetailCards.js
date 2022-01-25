@@ -13,7 +13,10 @@ const DetailCards = (props) => {
                   {name}
                 </CardTitle>
                 <CardText>
-                 If you find yourself in {city}, come visit {name}. Visit their website below.
+                 If you are near {city}, come visit {name}. 
+                 </CardText>
+                <CardText>            
+                Visit their website below.
                 </CardText>
                 <CardText>
                  Exact Address: {street} {city}, {state}, {postal_code}

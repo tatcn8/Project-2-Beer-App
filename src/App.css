@@ -41,5 +41,9 @@
   width: 500px;
 }
 .header{
-  background-color: red;
+  background-color: rgb(255, 193, 7);
+}
+.image1{
+  height: 750px;
+  width: 1250px;
 }

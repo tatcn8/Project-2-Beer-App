@@ -30,7 +30,7 @@ const BeerDetails= () =>{
     } else{
     return(
         <div>
-           <Card
+           <Card className="bg-warning" 
               body
               color="secondary"
               outline>
