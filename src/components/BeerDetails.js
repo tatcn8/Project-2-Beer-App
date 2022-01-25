@@ -49,7 +49,9 @@ const BeerDetails= () =>{
               </CardText>
            </Card>
            </span>
-          
+          <div>
+            <img className = "image2" src = "https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/> 
+        </div>
        </div>
     )
 }}
