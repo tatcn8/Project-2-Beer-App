@@ -26,7 +26,6 @@ console.log(beers)
                     beer = {beer.beer}
                     style = {beer.style}
                     id = {beer.id}
-                    key ={beer.id}
                 />
             </Col>
             )

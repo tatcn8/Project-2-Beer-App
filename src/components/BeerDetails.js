@@ -50,7 +50,7 @@ const BeerDetails= () =>{
            </Card>
            </span>
           <div>
-            <img className = "image2" alt= "beer picture" src = "https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/> 
+            <img className = "image2" alt= "beer" src = "https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/> 
         </div>
        </div>
     )
