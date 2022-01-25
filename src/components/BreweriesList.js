@@ -2,8 +2,6 @@ import React from "react";
 import BreweryCards from "./BreweryCards";
 import { Col } from "reactstrap"
 
-
-
 const BreweriesList = (props) => {
     const StateList = 
 [
@@ -58,11 +56,8 @@ const BreweriesList = (props) => {
     {name:"West Virginia", id: "west_virginia"},
     {name:"Wyoming", id: "wyoming"},
 ]
-   
-
         return(
             <>
-
             {StateList.map(state=>{
                 return(
                  <Col xs="2">
@@ -72,11 +67,8 @@ const BreweriesList = (props) => {
                         key={state.id}  />
                  </Col>
                 )
-                
             })}
             </>
         )
     }
-
-
 export default BreweriesList;

@@ -10,9 +10,9 @@ const BreweryCards = (props) =>{
             <Card className="bg-warning">
                 <CardBody>
                     <Link to={`/breweries/${id}`}>
-                            <Button>
+                        <Button>
                             {name}
-                            </Button>
+                        </Button>
                     </Link>
                 </CardBody>
             </Card>
@@ -21,6 +21,4 @@ const BreweryCards = (props) =>{
 
     )
 }
-
-
 export default BreweryCards;

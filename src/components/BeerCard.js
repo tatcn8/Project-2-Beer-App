@@ -29,5 +29,4 @@ const BeerCard= (props) =>{
         </div>
     )
 }
-
 export default BeerCard;

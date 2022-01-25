@@ -7,6 +7,7 @@ const BeerDetails= () =>{
     const [beer, setBeer] = useState()
     const { id } = useParams()
     const url = "https://beer-lover.p.rapidapi.com/beer/"
+
     useEffect(()=>{
       const key = process.env.REACT_APP_KEY
         fetch(url + id, {
@@ -19,6 +20,7 @@ const BeerDetails= () =>{
         .then(json=>setBeer(json))
         //eslint-disable-next-line
     }, [])
+
     if (!beer){
         return <p>page loading...</p>
     } else{
@@ -49,6 +51,4 @@ const BeerDetails= () =>{
        </div>
     )
 }}
-
-
 export default BeerDetails;

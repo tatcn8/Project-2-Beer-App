@@ -30,5 +30,4 @@ const DetailCards = (props) => {
         </div>
     )
 }
-
 export default DetailCards;

@@ -4,7 +4,7 @@ import { Col } from 'reactstrap';
 
 const BeerList= () =>{
     const [beers, setBeers] = useState([])
-    
+
     useEffect(()=>{
         const url = "https://beer-lover.p.rapidapi.com/top100"
         const key = process.env.REACT_APP_KEY
@@ -17,7 +17,7 @@ const BeerList= () =>{
         .then(res=>res.json())
         .then(json=>setBeers(json))
     }, [])
-console.log(beers)
+    
     return(
         <>
         {beers.map(beer=>{
@@ -31,10 +31,7 @@ console.log(beers)
             </Col>
             )
         })}
-        
-        
         </>
     )
 }
-
 export default BeerList;

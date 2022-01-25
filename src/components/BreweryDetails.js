@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DetailCards from "./DetailCards";
 import { Col } from 'reactstrap'
+
 const BreweriesDetails = () =>{
     const [stateBrew, setStateBrew] = useState([])
     const url = "https://api.openbrewerydb.org/breweries?by_state="
@@ -12,8 +13,7 @@ const BreweriesDetails = () =>{
         .then(json=>setStateBrew(json))
           //eslint-disable-next-line
     }, [])
-
-    console.log(stateBrew)
+    
     if (stateBrew === []){
         return <p>page loading...</p>
     } else{
