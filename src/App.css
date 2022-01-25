@@ -54,3 +54,28 @@
   height: 580px;
   width: 400px;
 }
+.searchbar{
+  padding-right: 150px;
+}
+.searchresult{
+  padding-left: 10px;
+  height: 200px;
+  width: 150px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.searchresult::-webkit-scrollbar{
+  display: none;
+}
+.searchresult .resultItem{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.resultItem{
+  margin-left: 10px;
+}
