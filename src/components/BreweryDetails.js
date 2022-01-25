@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Card, CardTitle, CardText, Button } from 'reactstrap';
-
+import { NavItem } from "reactstrap";
+import DetailCards from "./DetailCards";
+import { Col } from 'reactstrap'
 const BreweriesDetails = () =>{
     const { id } = useParams()
     const [stateBrew, setStateBrew] = useState([])
@@ -17,32 +18,22 @@ const BreweriesDetails = () =>{
         return <p>page loading...</p>
     } else{
     return(
-        <div>
+        <>
             {stateBrew.map(item=>{
                 return(
-                <div>
-                 <Card
-                    body
-                    color="secondary"
-                    outline>
-                    <CardTitle tag="h5">
-                        {item.name}
-                    </CardTitle>
-                    <CardText>
-                      If you find yourself in {item.city}, come visit {item.name}. Visit their website below.
-                    </CardText>
-                    <CardText>
-                      Exact Address: {item.street} {item.city}, {item.state}, {item.postal_code}
-                    </CardText>
-                        <Button href={item.website_url}>
-                         Check out this brewery!
-                        </Button>
-                 </Card>
-                </div>
-                    
+                <Col xs='3'>
+                <DetailCards 
+                    name={item.name}
+                    city={item.city}
+                    state={item.state}
+                    street={item.street}
+                    postal_code={item.postal_code}
+                    website_url={item.website_url} 
+                    />
+                </Col>
                 )
             })}
-        </div>
+        </>
     )
 }}
 

@@ -6,12 +6,12 @@ const BreweryCards = (props) =>{
     const { name, id } = props
     return(
         <div>
-            <Card>
+            <Card className="bg-warning">
                 <CardBody>
                     <Link to={`/breweries/${id}`}>
-                        <Button>
-                         {name}
-                        </Button>
+                            <Button>
+                            {name}
+                            </Button>
                     </Link>
                 </CardBody>
             </Card>
