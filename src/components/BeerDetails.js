@@ -8,7 +8,6 @@ const BeerDetails= () =>{
     const { id } = useParams()
     const url = "https://beer-lover.p.rapidapi.com/beer/"
     useEffect(()=>{
-        // eslint-disable-line react-hooks/exhaustive-deps
       const key = process.env.REACT_APP_KEY
         fetch(url + id, {
             "method": "GET",
@@ -18,6 +17,7 @@ const BeerDetails= () =>{
         }})
         .then(res=>res.json())
         .then(json=>setBeer(json))
+        //eslint-disable-next-line
     }, [])
     if (!beer){
         return <p>page loading...</p>

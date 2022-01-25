@@ -7,10 +7,10 @@ const BreweriesDetails = () =>{
     const url = "https://api.openbrewerydb.org/breweries?by_state="
     const { id } = useParams()
     useEffect(()=>{
-        // eslint-disable-line react-hooks/exhaustive-deps
         fetch(url + id)
         .then(res=>res.json())
         .then(json=>setStateBrew(json))
+        // eslint-disable-line react-hooks/exhaustive-deps
     }, [])
 
     console.log(stateBrew)
