@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BreweryCards from "./BreweryCards";
 import { Col } from "reactstrap"
 
@@ -58,12 +58,12 @@ const BreweriesList = (props) => {
     {name:"West Virginia", id: "west_virginia"},
     {name:"Wyoming", id: "wyoming"},
 ]
-    const [state, setState] = useState(StateList)
+   
 
         return(
             <>
 
-            {state.map(state=>{
+            {StateList.map(state=>{
                 return(
                  <Col xs="2">
                     <BreweryCards

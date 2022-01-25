@@ -22,7 +22,7 @@ const DetailCards = (props) => {
                 <CardText>
                  Exact Address: {street} {city}, {state}, {postal_code}
                 </CardText>
-                <Button href={website_url}>
+                <Button href={website_url} target="-blank">
                   Check out this brewery!
                 </Button>
             </Card>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { NavItem } from "reactstrap";
 import DetailCards from "./DetailCards";
 import { Col } from 'reactstrap'
 const BreweriesDetails = () =>{
