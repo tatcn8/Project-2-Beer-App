@@ -10,7 +10,7 @@ const BreweriesDetails = () =>{
         fetch(url + id)
         .then(res=>res.json())
         .then(json=>setStateBrew(json))
-        // eslint-disable-line react-hooks/exhaustive-deps
+          //eslint-disable-next-line
     }, [])
 
     console.log(stateBrew)
