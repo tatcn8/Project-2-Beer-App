@@ -6,13 +6,13 @@ import { Card, CardTitle, CardText} from 'reactstrap';
 const BeerDetails= () =>{
     const { id } = useParams()
     const [beer, setBeer] = useState()
-    const url = "https://beer-lover.p.rapidapi.com/beer/"
-    const key = process.env.REACT_APP_KEY
-    const combinedUrl = `${url}${id}`
+    
 
-    console.log(combinedUrl)
 
     useEffect(()=>{
+      const url = "https://beer-lover.p.rapidapi.com/beer/"
+      const key = process.env.REACT_APP_KEY
+      const combinedUrl = `${url}${id}`
         fetch(combinedUrl, {
             "method": "GET",
             "headers": {

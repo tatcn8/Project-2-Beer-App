@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*eslint-disable no-unused-vars */
- /*eslint-disable-line react-hooks/exhaustive-deps: 'off'*/
+
 
 ReactDOM.render(
   <React.StrictMode>

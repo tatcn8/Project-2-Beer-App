@@ -4,9 +4,10 @@ import { Col } from 'reactstrap';
 
 const BeerList= () =>{
     const [beers, setBeers] = useState([])
-    const url = "https://beer-lover.p.rapidapi.com/top100"
-    const key = process.env.REACT_APP_KEY
+    
     useEffect(()=>{
+        const url = "https://beer-lover.p.rapidapi.com/top100"
+        const key = process.env.REACT_APP_KEY
         fetch(url, {
             "method": "GET",
             "headers": {
