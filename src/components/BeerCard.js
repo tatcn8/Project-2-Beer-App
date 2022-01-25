@@ -6,6 +6,7 @@ const BeerCard= (props) =>{
     const { beer, style, brewery, id } = props
     return(
         <div>
+            <span className="font-link">
             <Card className="bg-warning" >
                 <CardBody>
                     <CardTitle tag="h5">
@@ -24,6 +25,7 @@ const BeerCard= (props) =>{
                     </Link>
                 </CardBody>
             </Card>
+            </span>
         </div>
     )
 }

@@ -30,6 +30,7 @@ const BeerDetails= () =>{
     } else{
     return(
         <div>
+          <span className="font-link">
            <Card className="bg-warning" 
               body
               color="secondary"
@@ -47,6 +48,7 @@ const BeerDetails= () =>{
                 Proudly brewed in {beer.state}, {beer.country}.
               </CardText>
            </Card>
+           </span>
           
        </div>
     )

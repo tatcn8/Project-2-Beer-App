@@ -6,6 +6,7 @@ const BreweryCards = (props) =>{
     const { name, id } = props
     return(
         <div>
+            <span className="font-link">
             <Card className="bg-warning">
                 <CardBody>
                     <Link to={`/breweries/${id}`}>
@@ -15,6 +16,7 @@ const BreweryCards = (props) =>{
                     </Link>
                 </CardBody>
             </Card>
+            </span>
         </div>
 
     )

@@ -13,7 +13,10 @@ function App() {
   const [ navExpand, setNavExpand ] = useState(false)
   return (
     
-    <div className="App">
+    <div className="App" style={{ 
+      backgroundImage: `url("https://image.shutterstock.com/image-photo/pouring-beer-bubble-froth-glass-600w-1043587033.jpg")` 
+    }}>
+    <span className="font-link">
       <Navbar
     color="light"
     expand="md"
@@ -47,6 +50,7 @@ function App() {
       </Nav>
     </Collapse>
   </Navbar>
+  </span>
   <div>
       <Routes>
         <Route path ="/" element={<Header />} />

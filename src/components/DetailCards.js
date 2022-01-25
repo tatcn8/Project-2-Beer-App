@@ -5,6 +5,7 @@ const DetailCards = (props) => {
     const { name, city, state, street, postal_code, website_url } = props
     return(
         <div>
+            <span className="font-link">
             <Card className="bg-warning" 
                 body
                 color="secondary"
@@ -25,6 +26,7 @@ const DetailCards = (props) => {
                   Check out this brewery!
                 </Button>
             </Card>
+            </span>
         </div>
     )
 }
