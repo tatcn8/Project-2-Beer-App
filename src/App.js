@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
-import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse, Row, Col } from "reactstrap";
+import { NavbarBrand, Nav, NavItem, NavbarToggler, NavLink, Navbar, Collapse, Row } from "reactstrap";
 import BreweriesList from './components/BreweriesList';
 import BreweriesDetails from './components/BreweryDetails';
 import BeerList from './components/BeerList';
@@ -14,13 +14,13 @@ function App() {
   return (
     
     <div className="App" style={{ 
-      backgroundImage: `url("https://image.shutterstock.com/image-photo/pouring-beer-bubble-froth-glass-600w-1043587033.jpg")` 
+      backgroundImage:`url("https://image.shutterstock.com/image-photo/pouring-beer-bubble-froth-glass-600w-1043587033.jpg")` 
     }}>
     <span className="font-link">
       <Navbar
     color="light"
     expand="md"
-    light>
+    light>  
     <NavbarBrand href="/">
     🍺  The Beer App 🍺 
     </NavbarBrand>

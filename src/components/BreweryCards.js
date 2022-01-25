@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardTitle, Button } from 'reactstrap'
+import { Card, CardBody, Button } from 'reactstrap'
 import { Link } from "react-router-dom"
 
 const BreweryCards = (props) =>{
