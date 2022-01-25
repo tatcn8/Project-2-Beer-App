@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom";
 import DetailCards from "./DetailCards";
 import { Col } from 'reactstrap'
 const BreweriesDetails = () =>{
-    const { id } = useParams()
     const [stateBrew, setStateBrew] = useState([])
     const url = "https://api.openbrewerydb.org/breweries?by_state="
+    const { id } = useParams()
     useEffect(()=>{
-        fetch(url + id)
+        const id1 = id
+        fetch(url + id1)
         .then(res=>res.json())
         .then(json=>setStateBrew(json))
     }, [])

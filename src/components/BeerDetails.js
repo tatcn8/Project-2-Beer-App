@@ -4,15 +4,13 @@ import { Card, CardTitle, CardText} from 'reactstrap';
 
 
 const BeerDetails= () =>{
-    const { id } = useParams()
     const [beer, setBeer] = useState()
-    
-
-
+    const { id } = useParams()
     useEffect(()=>{
+      let id1 = id
       const url = "https://beer-lover.p.rapidapi.com/beer/"
       const key = process.env.REACT_APP_KEY
-      const combinedUrl = `${url}${id}`
+      const combinedUrl = url + id1
         fetch(combinedUrl, {
             "method": "GET",
             "headers": {
@@ -22,9 +20,6 @@ const BeerDetails= () =>{
         .then(res=>res.json())
         .then(json=>setBeer(json))
     }, [])
-
-    console.log(beer)
-
     if (!beer){
         return <p>page loading...</p>
     } else{
