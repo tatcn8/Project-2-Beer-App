@@ -32,7 +32,7 @@ const BeerDetails= () =>{
               color="secondary"
               outline>
               <CardTitle tag="h5">
-                {beer.beer}
+                Name: {beer.beer}
               </CardTitle>
               <CardText>
                 Style: {beer.style}
